@@ -5,71 +5,27 @@
 loader
 */
 .loader {
-	width: 60px;
-	height: 40px;
-	position: fixed; /* Cover the entire viewport */
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	--base-color: #263238;
-	z-index: 1000;
-	display: none; /* Hidden by default */
-}
-
-.loader::before,
-.loader::after {
+	position: relative;
+	width: 100px;
+	height: 100px;
+  }
+  
+  .loader:before , .loader:after{
 	content: '';
-	position: absolute;
 	border-radius: 50%;
-	background-color: #FFF;
-	background-repeat: no-repeat;
-	box-sizing: border-box;
-}
-
-.loader::before {
-	left: 0;
-	top: 0;
-	width: 36px;
-	height: 36px;
-	background-image: radial-gradient(circle 8px at 18px 18px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 4px at 18px 0px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 4px at 0px 18px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 4px at 36px 18px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 4px at 18px 36px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 4px at 30px 5px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 4px at 30px 5px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 4px at 30px 30px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 4px at 5px 30px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 4px at 5px 5px, var(--base-color) 100%, transparent 0);
-	animation: rotationBack 3s linear infinite;
-}
-
-.loader::after {
-	left: 35px;
-	top: 15px;
-	width: 24px;
-	height: 24px;
-	background-image: radial-gradient(circle 5px at 12px 12px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 2.5px at 12px 0px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 2.5px at 0px 12px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 2.5px at 24px 12px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 2.5px at 12px 24px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 2.5px at 20px 3px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 2.5px at 20px 3px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 2.5px at 20px 20px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 2.5px at 3px 20px, var(--base-color) 100%, transparent 0),
-	radial-gradient(circle 2.5px at 3px 3px, var(--base-color) 100%, transparent 0);
-	animation: rotationBack 4s linear infinite reverse;
-}
-
-@keyframes rotationBack {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(-360deg);
-	}
-}
+	position: absolute;
+	inset: 0;
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+  }
+  .loader:after {
+	box-shadow: 0 2px 0 #FF3D00 inset;
+	animation: rotate 2s linear infinite;
+  }
+  
+  @keyframes rotate {
+	0% {  transform: rotate(0)}
+	100% { transform: rotate(360deg)}
+  }
 
 /* Hide the rest of the content while loading */
 body.is-preload #wrapper {
