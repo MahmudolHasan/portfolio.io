@@ -35,8 +35,74 @@ body.is-preload #wrapper {
 body.is-preload .loader {
 	display: block;
 }  
-  
-		
+
+
+.download-icon {
+    display: inline-block;
+    color: #d6d8da;
+    font-size: 24px;
+    transition: color 0.3s;
+	border: 0;
+	display: inline-block;
+	margin-right: 15px; /* Adjust spacing between icon and "Menu" link */
+    vertical-align: middle;
+	line-height: inherit;
+	padding: 0 1.5em;
+	
+  }
+
+  .download-icon:hover {
+    color: #0056b3;
+}
+
+.footer-line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1px ;
+}
+
+.footer-line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #ccc;
+    margin: 0 15px; /* Adjust spacing between line and icons */
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icons li {
+    margin: 0 10px; /* Space between icons */
+}
+
+.icons .icon {
+    font-size: 24px; /* Icon size */
+    color: #007bff; /* Icon color */
+    transition: color 0.3s;
+}
+
+.icons .icon:hover {
+    color: #0056b3;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between; /* Adjusts spacing between items */
+    align-items: flex-start; /* Aligns items to the top */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 10px; /* Adjust spacing between the sections */
+}
+
+
+
 /*
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
@@ -2943,16 +3009,18 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 		padding-left: 3.25em;
 		position: relative;
+		font-size: medium;
+		padding-top: 2%;
 	}
 
 		.contact-method .icon {
 			left: 0;
 			position: absolute;
-			top: 0;
+			top: 15;
 		}
 
 		.contact-method h3 {
-			margin: 0 0 0.5em 0;
+			margin: 0 0 0.1em 0;
 		}
 
 /* Spotlights */
