@@ -44,7 +44,7 @@ body.is-preload .loader {
     transition: color 0.3s;
 	border: 0;
 	display: inline-block;
-	margin-right: 15px; /* Adjust spacing between icon and "Menu" link */
+	margin-right: 15px; /* Adjust spacing between icon and "Menu" */
     vertical-align: middle;
 	line-height: inherit;
 	padding: 0 1.5em;
@@ -91,6 +91,32 @@ body.is-preload .loader {
 .icons .icon:hover {
     color: #0056b3;
 }
+#footer .icons .icon {
+    font-size: 16px; /* Adjust the size as needed */
+}
+/*  */
+#footer .icons a {
+    text-decoration: none; /* Remove underline in all states */
+    outline: none; /* Remove any focus outline */
+}
+
+#footer .icons a .fa-brands {
+    text-decoration: none; /* Ensure the icon itself has no underline */
+    display: inline-block; /* Properly display the icon */
+}
+
+#footer .icons a:link,
+#footer .icons a:visited,
+#footer .icons a:hover,
+#footer .icons a:active,
+#footer .icons a:focus {
+    text-decoration: none; /* Remove underline in all link states */
+}
+
+#footer .icons a .label {
+    display: none; /* Hide the label if it's not needed */
+}
+
 
 
 .contact-container {
@@ -255,18 +281,18 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		border-bottom: none;
 		color: inherit;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #9bf1ff !important;
+			color: #06bd2e !important;
 		}
 
 		a:active {
-			color: #53e3fb !important;
+			color: #06bd2e !important;
 		}
 
 	strong, b {
@@ -3042,7 +3068,7 @@ input, select, textarea {
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
 			flex-direction: row;
-			background-color: #2e3450;
+			background-color: #67d18775;
 		}
 
 			.spotlights > section > .image {
@@ -3104,7 +3130,7 @@ input, select, textarea {
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
-				background-color: #333856;
+				background-color: #613f2f86;
 			}
 
 				.spotlights > section:nth-child(2n) > .content {
@@ -3363,7 +3389,7 @@ input, select, textarea {
 		}
 
 			#header.alt.style1 .logo strong {
-				color: #6fc3df;
+				color: #16313a;
 			}
 
 			#header.alt.style2 .logo strong {
@@ -3514,7 +3540,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #242943
 			content: '';
 			display: block;
 			height: 100%;
@@ -3599,7 +3625,7 @@ input, select, textarea {
 		}
 
 		#banner.style2:after {
-			background-color: #8d82c4;
+			background-color: #153119c9;
 		}
 
 		#banner.style3:after {
@@ -3902,7 +3928,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: rgba(36, 41, 67, 0.9);
+		background: rgba(36, 41, 67, 0.9);  /* rgba(36, 41, 67, 0.9); */
 		box-shadow: none;
 		height: 100%;
 		left: 0;
