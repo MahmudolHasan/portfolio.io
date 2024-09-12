@@ -333,3 +333,5 @@
 			});
 
 })(jQuery);
+
+// download icon

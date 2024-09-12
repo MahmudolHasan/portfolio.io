@@ -2,6 +2,23 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
 /*
+download icon
+*/
+
+.download-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+}
+
+#lottie-animation {
+    width: 80px;
+    height: 50px;
+}
+
+/*
 loader
 */
 .loader {
@@ -3540,7 +3557,7 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: #242943
+			background-color: #242943;
 			content: '';
 			display: block;
 			height: 100%;
@@ -3625,7 +3642,7 @@ input, select, textarea {
 		}
 
 		#banner.style2:after {
-			background-color: #153119c9;
+			background-color: #17522498;
 		}
 
 		#banner.style3:after {

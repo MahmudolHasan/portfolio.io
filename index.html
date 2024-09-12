@@ -12,6 +12,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -26,8 +28,10 @@
 					<header id="header" class="alt">
 						<a href="index.html" class="logo"><strong>Mahmudol Hasan Tushar </strong> <span>Software Quality Assurance Engineer</span></a>
 						<a href="path/to/your/resume.pdf" download="Your_Resume_Name.pdf" class="download-icon" aria-label="Download Resume">
-							<i class="fas fa-cloud-download-alt"></i>
-						  </a>
+							<div id="lottie-animation">
+								<dotlottie-player class="lottie" src="https://lottie.host/ce0a6538-0bed-473a-916e-7032b11882d5/NVyKhHVYAD.json" background="transparent" speed="1" style="width: 40px; height: 65px;" loop="false" autoplay="false"></dotlottie-player>
+							</div>
+						</a>
 						  
 
 						<nav>
@@ -128,44 +132,21 @@
 					
 
 <!-- Footer -->
-<section class="contact-container">
-    <div class="contact-method">
-        <span class="icon solid alt fa-envelope"></span>
-        <h3>Email</h3>
-        <a href="#">r@gmail.com</a>
-    </div>
+<footer id="footer new dark">
+    <div class="container_footer">
+        <div id="footer_wrapper">
+		 <h2 class="footer heading">
+			<span>Get In Touch</span>
+		 </h2>
+		<div class="ficons">
+			<a href="#"><i class='bx bxl-facebook' ></i></a>
+			<a href="#"><i class='bx bxl-linkedin'></i></a>
+			<a href="#"><i class='bx bxl-github' ></i></a>
 
-    <div class="contact-method">
-        <span class="icon solid alt fa-phone"></span>
-        <h3>Phone</h3>
-        <span>+880 </span>
-    </div>
+		</div>
 
-    <div class="contact-method">
-        <span class="icon solid alt fa-home"></span>
-        <h3>Address</h3>
-        <span> Road<br />
-       jhb<br />
-        mbm</span>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer id="footer">
-    <div class="inner">
-        <!-- Icons within Horizontal Line -->
-        <div class="footer-line-container">
-            <span class="footer-line"></span>
-            <ul class="icons">
-                <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-                <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-				
-            </ul>
-            <span class="footer-line"></span>
-        </div>
+		</div>
+        
     </div>
 </footer>
 
@@ -184,6 +165,23 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/loader.js"></script>
 			<script src="assets/js/ajaxloader.js"></script>
+			<script src="assets/js/download.js"></script>
+			<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
 	</body>
 </html>
+
+
+
+<!-- <div class="footer-line-container">
+            <span class="footer-line"></span>
+            <ul class="icons">
+                <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+				
+            </ul>
+            <span class="footer-line"></span>
+        </div> -->
