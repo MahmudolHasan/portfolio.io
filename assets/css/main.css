@@ -126,17 +126,18 @@ Footer
 	background-color: #b71540;
 	font-family: 'Montserrat', sans-serif;
   }
+
   
   .box {
 	background-color: transparent;
 	border-radius: 3px;
-	color: #fff;
+	color: #fcfafa;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 200px;
-	height: 270px;
+	height: 240px;
 	transform-style: preserve-3d;
 	perspective: 2000px;
 	transition: .4s;
@@ -149,8 +150,8 @@ Footer
 	  width: 100%;
 	  height: 100%;
 	  background: transparent;
-	  border-top: 10px solid #fff;
-	  border-left: 10px solid #fff;
+	  border-top: 10px solid #333;
+	  border-left: 10px solid #333;
 	  box-sizing: border-box;
 	}
 	&:after {
@@ -160,17 +161,17 @@ Footer
 	  left: 0;
 	  width: 100%;
 	  height: 100%;
-	  border-bottom: 10px solid #fff;
-	  border-right: 10px solid #fff;
+	  border-bottom: 10px solid #333;
+	  border-right: 10px solid #333;
 	  box-sizing: border-box;
 	}
 	.fas {
 	  font-size: 15px;
-	  height: 50px;
+	  height: 30px;
 	  width: 50px;
 	  line-height: 50px !important;
-	  background-color: #fff;
-	  color: #2C3A47;
+	  background-color: #333;
+	  color: #2c5a47;
 	  font-size: 15px;
 	}
 	.fa2 {
@@ -186,7 +187,7 @@ Footer
 	  left: -30px;
 	  width: calc(100% + 60px);
 	  height: calc(100% - 60px);
-	  background-color: #2C3A47;
+	  background-color: #4b913d;
 	  border-radius: 3px;
 	  transition: .4s;
 	  .fa1 {
